@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMD Live Code Editor</title>
+    <link rel="stylesheet" href="JMDCodePen.css">
+</head>
+<body>
+
+    <div class="top">
+
+        <div class="editor">
+            <h3>HTML</h3>
+            <textarea id="html-code" onkeyup="updateOutput()"></textarea>
+        </div>
+
+        <div class="editor">
+            <h3>CSS</h3>
+            <textarea id="css-code" onkeyup="updateOutput()"></textarea>
+        </div>
+
+        <div class="editor">
+            <h3>JavaScript</h3>
+            <textarea id="js-code" onkeyup="updateOutput()"></textarea>
+        </div>
+
+    </div>
+
+
+    <div class="bottom">
+
+        <h2>Output</h2>
+        <iframe id="output"></iframe>
+
+    </div>
+
+    <button onclick="downloadCode()"> Download Code </button>
+
+
+    <script src="JMDCodePen.js"></script>
+
+
+</body>
+</html>
